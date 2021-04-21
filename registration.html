@@ -48,6 +48,7 @@
 
 <body>
 
+    <!-- Form -->
     <div class="container">
         <div class="mt-5">
             <form>
@@ -115,7 +116,33 @@
                     <label class="form-check-label" for="checkBox">I agree</label>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Register</button>
+                <!-- <button type="submit" class="btn btn-primary">Register</button> -->
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#regModal">
+                    Register
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="regModalLabel">Information</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Complete registration
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </form>
         </div>
     </div>
